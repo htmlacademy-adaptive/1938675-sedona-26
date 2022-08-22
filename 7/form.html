@@ -35,7 +35,7 @@
         </ul>
       </nav>
       <div class="main-header__hero hero hero--short">
-        <img class="hero__slogan hero__slogan--short" src="img/sedona.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
+        <img class="hero__slogan hero__slogan--short" src="img/hero-slogan.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
 
@@ -77,10 +77,10 @@
           </fieldset>
         </div>
         <fieldset class="review-form__group review-form__group--padding-bottom">
-          <div class="review-form__title">
+          <div class="review-form__title review-form__title--fix-width">
             <legend class="title-default">Ваше общее впечатление:</legend>
           </div>
-          <ul class="review-form__control-list">
+          <ul class="review-form__control-list review-form__control-list--radio">
             <li class="review-form__control-item">
               <input class="control__input" type="radio" name="impressions" id="impressions1" checked>
               <label class="control radio" for="impressions1">
@@ -102,10 +102,10 @@
           </ul>
         </fieldset>
         <fieldset class="review-form__group review-form__group--padding-bottom">
-          <div class="review-form__title">
+          <div class="review-form__title review-form__title--fix-width">
             <legend class="review-form__title title-default">Посещенные достопримечательности:</legend>
           </div>
-          <ul class="review-form__control-list">
+          <ul class="review-form__control-list review-form__control-list--checkbox">
             <li class="review-form__control-item">
               <input class="control__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
               <label class="control checkbox" for="devil-bridge">
@@ -133,7 +133,7 @@
           </ul>
         </fieldset>
         <div class="review-form__group">
-          <div class="review-form__title">
+          <div class="review-form__title review-form__title--fix-width">
             <label class="review-form__title title-default" for="comment">Опишите свои эмоции:</label>
           </div>
           <textarea class="review-form__comment" name="comment" placeholder="Опишите подробно все свои восторги" id="comment"></textarea>
