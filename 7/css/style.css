@@ -15,6 +15,7 @@
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .content-width {
   padding-left: 20px;
@@ -277,7 +278,7 @@ img {
 .hero {
   height: 389px;
   background-color: #81b3d2;
-  background-image: url("../img/hero-cover-mobile.jpg");
+  background-image: url("../img/hero-cover-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   position: relative;
@@ -291,7 +292,7 @@ img {
 @media (min-width: 768px) {
   .hero {
     height: 517px;
-    background-image: url("../img/hero-cover-tablet.jpg");
+    background-image: url("../img/hero-cover-tablet@1x.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -302,7 +303,7 @@ img {
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: url("../img/hero-cover-desktop.jpg");
+    background-image: url("../img/hero-cover-desktop@1x.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -414,6 +415,9 @@ img {
   .advantages-card--no-image {
     display: block;
   }
+}
+.advantages-card__image {
+  width: 100%;
 }
 .underline {
   position: relative;
@@ -717,6 +721,9 @@ img {
   justify-content: center;
   background-color: #df9a7a;
 }
+.photo-card__image {
+  width: 100%;
+}
 .photo-card__content {
   padding: 15px 0 25px;
 }
@@ -770,7 +777,7 @@ img {
   font-weight: 700;
   color: inherit;
 }
-.presentation__video {
+.video {
   position: relative;
 }
 .video__play-button {
@@ -784,6 +791,7 @@ img {
   border: 0;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 .video__play-button::after {
   display: block;
@@ -797,6 +805,24 @@ img {
 }
 .video__play-button--hidden {
   display: none;
+}
+.video__container {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .video__container {
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .video__container {
+    width: 800px;
+  }
+}
+.video__poster {
+  width: 100%;
 }
 .form-container__title {
   margin-top: 0;
@@ -1066,7 +1092,7 @@ img {
   background-position: center;
 }
 .checkbox:active::after {
-  background-color: rgba(51, 51, 51, 0.3);
+  opacity: 0.3;
 }
 .control__input + .checkbox::after {
   content: none;
