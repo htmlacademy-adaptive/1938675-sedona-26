@@ -344,7 +344,7 @@ img {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("img/hero-cover-mobile@2x.jpg");
+    background-image: url("../img/hero-cover-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -356,7 +356,7 @@ img {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("img/hero-cover-tablet@2x.jpg");
+    background-image: url("../img/hero-cover-tablet@2x.jpg");
     background-size: 768px auto;
   }
 }
@@ -367,7 +367,7 @@ img {
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("img/hero-cover-desktop@2x.jpg");
+    background-image: url("../img/hero-cover-desktop@2x.jpg");
     background-size: 1200px auto;
   }
 }
