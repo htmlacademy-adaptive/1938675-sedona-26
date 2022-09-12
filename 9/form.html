@@ -49,10 +49,8 @@
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="review-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <div class="review-form__wrapper">
-            <fieldset class="review-form__group">
-              <div class="review-form__title">
-                <legend class="title-default">Представьтесь:</legend>
-              </div>
+            <div class="review-form__group">
+              <div class="review-form__title review-form__title--name title-default">Представьтесь:</div>
               <label class="review-form__field">
                 <span class="review-form__label">Имя*:</span>
                 <input class="review-form__input" type="text" placeholder="Ваше имя" required>
@@ -65,11 +63,9 @@
                 <span class="review-form__label">Отчество:</span>
                 <input class="review-form__input" type="text" placeholder="Ваше отчество">
               </label>
-            </fieldset>
-            <fieldset class="review-form__group">
-              <div class="review-form__title">
-                <legend class="title-default">Контактная информация:</legend>
-              </div>
+            </div>
+            <div class="review-form__group">
+              <div class="review-form__title review-form__title--contacts title-default">Контактная информация:</div>
               <label class="review-form__field">
                 <span class="review-form__label">Контактный телефон*:</span>
                 <input class="review-form__input review-form__input--tel" type="tel" placeholder="Введите телефон" required>
@@ -78,12 +74,10 @@
                 <span class="review-form__label">Электронная почта*:</span>
                 <input class="review-form__input review-form__input--email" type="email" placeholder="Введите e-mail" required>
               </label>
-            </fieldset>
-          </div>
-          <fieldset class="review-form__group review-form__group--padding-bottom">
-            <div class="review-form__title review-form__title--fix-width">
-              <legend class="title-default">Ваше общее впечатление:</legend>
             </div>
+          </div>
+          <div class="review-form__group review-form__group--impressions">
+            <div class="review-form__title review-form__title--fix-width title-default">Ваше общее впечатление:</div>
             <ul class="review-form__control-list review-form__control-list--radio">
               <li class="review-form__control-item">
                 <input class="control__input" type="radio" name="impressions" id="impressions1" checked>
@@ -104,11 +98,9 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="review-form__group review-form__group--padding-bottom">
-            <div class="review-form__title review-form__title--fix-width">
-              <legend class="review-form__title title-default">Посещенные достопримечательности:</legend>
-            </div>
+          </div>
+          <div class="review-form__group review-form__group--attractions">
+            <div class="review-form__title review-form__title--fix-width title-default">Посещенные достопримечательности:</div>
             <ul class="review-form__control-list review-form__control-list--checkbox">
               <li class="review-form__control-item">
                 <input class="control__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
@@ -135,7 +127,7 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <div class="review-form__group">
             <div class="review-form__title review-form__title--fix-width">
               <label class="review-form__title title-default" for="comment">Опишите свои эмоции:</label>
@@ -177,7 +169,7 @@
           <h2 class="visually-hidden">Разработчики сайта</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <span class="copyright-title">Разработано</span>
-            <svg class="copyright__icon" width="28" heigth="33">
+            <svg class="copyright__icon" width="28" height="33">
               <use xlink:href="img/sprite.svg#icon-html-academy"></use>
             </svg>
           </a>
